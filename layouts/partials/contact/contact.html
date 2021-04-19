@@ -1,0 +1,53 @@
+<section class="site-contact">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-6">
+        <h2 class="site-contact-title">
+          {{ .Params.title | safeHTML }}
+        </h2>
+        <p> {{.Params.heading}}
+
+        <div class="site-contact-form">
+          <form id="contact-form" action="{{ .Site.Params.formspreeFormUrl }}" method="POST">
+            <div class="row">
+              <div class="col-md-12">
+                <input type="text" class="form-control" name="full-name" id="full-name" placeholder="Full Name">
+              </div>
+              <div class="col-md-12">
+                <input type="email" class="form-control" name="email" id="email" placeholder="Email">
+              </div>
+              <div class="col-md-12">
+                <input type="text" class="form-control" name="phone-number" id="phone-number"
+                  placeholder="Phone Number">
+              </div>
+              <div class="col-md-12">
+                <input type="text" class="form-control" name="organization" id="organization"
+                  placeholder="Organization">
+              </div>
+              <div class="col-md-12">
+                <input type="text" class="form-control" name="industry" id="industry" placeholder="Industry">
+              </div>
+
+              <div class="col-md-12">
+                <textarea class="form-control" id="message" name="message" rows="3" placeholder="Message"></textarea>
+              </div>
+              <div class="col-md-12">
+                <button aria-label="contactus"  type="submit" class="btn-contact" id="contact-form-button">
+                  <span class="btn-area">
+                    <span data-text="Send Message">
+                      Send
+                    </span>
+                  </span>
+                </button>
+              </div>
+              <p id="contact-form-status"></p>
+            </div>
+          </form>
+        </div>
+      </div>
+      <div class="col-md-6">
+        <img class="contactImg" src="{{.Params.contactImg}}" />
+      </div>
+    </div>
+  </div>
+</section>

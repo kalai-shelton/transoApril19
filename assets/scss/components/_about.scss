@@ -1,0 +1,89 @@
+.heroAboutbody {
+margin-top:20px;
+margin-left:20px;
+justify-content: center;
+@include mobile {
+margin-left:0;
+text-align: center;
+}
+}
+.site-about-header {
+  padding-top: 80px;
+  background-color: $background-color-secondary;
+@include mobile {
+padding-top: 20px;
+}
+}
+.exH{
+  padding-top: 20px;
+}
+.mpara{
+  padding-top: 20px;
+}
+.heroAboutPara2 {
+  color: $text-color-primary;
+}
+
+.site-about-mission {
+  padding-top: 50px;
+  background-color: $background-color-secondary;
+}
+
+.missionImg {
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size:cover;
+ height: 572px;
+@include mobile {
+height: 350px;
+}
+}
+
+.site-about-founder {
+  padding-top: 100px;
+  padding-bottom:100px;
+  background-color: $background-color-fifth;
+  color: $text-color-tertiary;
+@include mobile {
+ padding-bottom:10px;
+}
+}
+
+.founderDesc {
+color: #FFFFFF;
+font-weight:lighter;
+font-style: normal;
+font-size: 14px;
+font-family: Roboto;
+}
+
+
+
+.founderImgClass img{
+  width: 100%;
+
+}
+
+.founderNameClass {
+   color: #FFFFFF
+}
+
+.teamImgClass img{
+  width: 140px;
+  height: 150px;
+  border-radius: 50%;
+filter: grayscale(80%);
+}
+
+
+.teamcontent p{
+font-family: Roboto;
+font-size: 12px;
+color: #625C5C;
+}
+
+.teamcontent span {
+color: #FAAD26;
+font-family: Montserrat;
+font-size: 10px;
+}

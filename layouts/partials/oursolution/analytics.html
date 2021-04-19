@@ -1,0 +1,61 @@
+<section id="analytics">
+  <div
+    class="container opOpBg"
+    style="background-image: url('{{ .Params.analyticsImg }}'); "
+  >
+    <div class="col-md-8">
+      <h1 class="analytics-h1">{{ .Params.analyticsH }}</h1>
+      <h5>{{ .Params.analyticsC }}</h5>
+    </div>
+  </div>
+</section>
+<section>
+  <div class="container">
+    <div class="row" style="justify-content: center">
+      <div class="col-md-6 capOpHroute">
+        <div class="row capOpH">
+          <div class="d-flex">
+            <div class="col-md-9">
+              <h3>
+                <span class="capOpH1"> {{ .Params.repH1 }}</span> <br />
+                {{ .Params.repH2 }}
+              </h3>
+            </div>
+            <div class="col-md-6">
+              <img
+                class="logoOpImg"
+                src="{{.Params.repImg}}"
+                alt="Transo analytics Image"
+                class="src"
+              />
+            </div>
+          </div>
+          <p class="capP1">
+            {{ .Params.repC }}<br />{{ .Params.repC1 }}<br />{{ .Params.repC2}}<br />
+          </p>
+        </div>
+      </div>
+      <div class="col-md-6">
+        <div class="row capOpH">
+          <div class="d-flex">
+            <div class="col-md-8">
+              <h3>
+                <span class="capOpH1"> {{ .Params.digDH1 }}</span> <br />
+                {{ .Params.digDH2 }}
+              </h3>
+            </div>
+            <div class="col-md-6">
+              <img
+                class="logoOpImg"
+                src="{{.Params.digDImg}}"
+                alt="Transo Analytics Image2"
+                class="src"
+              />
+            </div>
+          </div>
+          <p>{{ .Params.digDC }}<br />{{ .Params.digDC1 }}</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>

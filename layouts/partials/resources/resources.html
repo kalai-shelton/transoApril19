@@ -1,0 +1,38 @@
+<section class="">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-8">
+                <div class="site-hero-content">
+                    <h2 class="resourcetabs h2">
+                        {{ .Params.industriesTabHeading }}
+                    </h2>
+                </div>
+            </div>
+        </div>
+        <div class="panel with-nav-tabs panel-default">
+            <div class="panel-heading">
+                <ul class="nav nav-tabs">
+                    <li class="active"><a href="#tab1default" data-toggle="tab"> {{.Params.ThreePLTab}} </a></li>
+                    <li><a href="#tab2default" data-toggle="tab"> {{.Params.OGTab}} </a></li>
+                    <li><a href="#tab3default" data-toggle="tab"> {{.Params.FMCGTab}} </a></li>
+                </ul>
+               
+            </div>
+            <div class="panel-body">
+                <div class="tab-content">
+                    <div class="tab-pane fade in active" id="tab1default">
+                        <div class="row">
+                            {{ partial "industry/3PLTab.html" . }}
+                        </div>
+                    </div>
+                    <div class="tab-pane fade" id="tab2default">
+                        {{ partial "industry/OGTab.html" . }}
+                    </div>
+                    <div class="tab-pane fade" id="tab3default">
+                        {{ partial "industry/FMCGTab.html" . }}
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>

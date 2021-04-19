@@ -1,0 +1,62 @@
+<section id="userexperience">
+  <div class="container opOpBg " style="background-image: url('{{ .Params.userExpImg }}');">
+      <div class="col-md-8">
+          <h2 class="opOph2">
+            {{ .Params.userExpH }}
+          </h2>
+          <h5>{{ .Params.userExpC }}</h5>
+      </div>
+  </div>
+</section>
+<section>
+  <div class="container" >
+    <div class="row" style="justify-content: center;"> 
+      <div class="col-md-6">
+        <div class="row capOpHExp">
+          <div class="d-flex">
+          <div class="col-md-9" >
+            <h3> <span class="capOpH1"> {{ .Params.bookMH1 }}</span>
+              <br/> {{ .Params.bookMH2 }} </h3>
+            
+          </div>
+          <div class="col-md-6">
+            <img class="logoOpImg" src="{{.Params.bookMImg}}" alt="Transo user Experience" class="src">
+          </div>
+        </div>
+        <p class="capP">{{ .Params.bookMC }}<br/>{{ .Params.bookMC1 }}<br/>{{ .Params.bookMC2 }}<br/>{{ .Params.bookMC3 }}<br/>{{ .Params.bookMC4 }}<br/>{{ .Params.bookMC5 }} </p>
+        </div>
+        <div class="row capOpHExp">
+          <div class="d-flex">
+          <div class="col-md-8" >
+            <h3> <span class="capOpH1"> 
+              {{ .Params.digTH1 }}</span>
+              <br/> {{ .Params.digTH2 }} </h3>
+            
+          </div>
+          <div class="col-md-6">
+            <img class="logoOpImg" src="{{.Params.digTImg}}" alt="Transo user experience" class="src">
+          </div>
+          </div>
+          <p class="rtm">{{ .Params.digTC }}<br/>{{ .Params.digTC1 }}<br/>{{ .Params.digTC2 }}<br/>{{ .Params.digTC3 }}<br/>{{ .Params.digTC4 }}<br/> </p>
+        </div>
+      </div>
+      
+      <div class="col-md-6 capOpHroute ">
+        <div class="row capOpHExp">
+          <div class="d-flex">
+          <div class="col-md-8" >
+            <h3> <span class="capOpH1"> 
+              {{ .Params.rtMH1 }}</span>
+              <br/> {{ .Params.rtMH2 }} </h3>
+            </div>
+          <div class="col-md-6">
+            <img class="logoOpImg" src="{{.Params.rtMImg}}" alt="Transo User Experience" class="src">
+          </div>
+          </div>
+          <p class="rtm1">{{ .Params.rtMC }}<br/>{{ .Params.rtMC1 }}<br/>{{ .Params.rtMC2 }}<br/>{{ .Params.rtMC3 }}<br/></p> 
+        </div>
+        
+      </div>
+    </div>
+  </div>
+</section>
